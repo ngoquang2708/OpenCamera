@@ -2925,6 +2925,7 @@ public class Preview implements SurfaceHolder.Callback, TextureView.SurfaceTextu
 			profile.videoCodec = MediaRecorder.VideoEncoder.VP8;
 			profile.audioCodec = MediaRecorder.AudioEncoder.VORBIS;
 		}*/
+		video_profile.videoCodec = applicationInterface.getOutputVideoCodec(video_profile.videoCodec);
 
 		if( MyDebug.LOG )
 			Log.d(TAG, "returning video_profile: " + video_profile);

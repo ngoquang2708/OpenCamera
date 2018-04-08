@@ -203,6 +203,12 @@
     <string name="preference_force_video_4k_summary">Enable 3840x2160 resolution for video recording on back camera - this option is a hack that may allow 4K devices on 4K cameras that don\'t expose the option to 3rd party camera apps. This isn\'t guaranteed to work, please test before working.</string>
     <string name="preference_video_stabilization">Enable video stabilization</string>
     <string name="preference_video_stabilization_summary">Video stabilization reduces the shaking due to the motion of the camera in both the preview and in recorded videos</string>
+    <string name="preference_output_format">Output format</string>
+    <string name="preference_output_format_summary">Set the format of the output</string>
+    <string name="preference_video_codec">Video codec</string>
+    <string name="preference_video_codec_summary">Set the video codec of the output</string>
+    <string name="preference_audio_codec">Audio codec</string>
+    <string name="preference_audio_codec_summary">Set the audio codec of the output</string>
     <string name="preference_video_bitrate">Video bitrate (approx)</string>
     <string name="preference_video_bitrate_summary">Set the approximate bitrate of videos (higher means better quality, but takes up more disk space; may cause video recording to fail if bitrate not supported)</string>
     <string name="preference_video_fps">Video frame rate (approx)</string>
@@ -509,4 +515,7 @@
             <li>Performance improvements and bug fixes.\n</li>
         </ul>
     </string>
+
+    <string name="video_codec_avc">H264</string>
+    <string name="video_codec_hevc">HEVC</string>
 </resources>

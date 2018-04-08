@@ -440,8 +440,23 @@ public class MyApplicationInterface implements ApplicationInterface {
 		// supported video resolutions/frame-rates).
 		return sharedPreferences.getString(PreferenceKeys.getVideoQualityPreferenceKey(cameraId, fpsIsHighSpeed()), "");
 	}
-	
-    @Override
+
+	@Override
+	public int getOutputFormat(int defValue) {
+		return Integer.parseInt(sharedPreferences.getString(PreferenceKeys.OutputFormat, "" + defValue));
+	}
+
+	@Override
+	public int getOutputVideoCodec(int defValue) {
+		return Integer.parseInt(sharedPreferences.getString(PreferenceKeys.OutputVideoCodec, "" + defValue));
+	}
+
+	@Override
+	public int getOutputAudioCodec(int defValue) {
+		return Integer.parseInt(sharedPreferences.getString(PreferenceKeys.OutputAudioCodec, "" + defValue));
+	}
+
+	@Override
 	public boolean getVideoStabilizationPref() {
 		return sharedPreferences.getBoolean(PreferenceKeys.getVideoStabilizationPreferenceKey(), false);
     }

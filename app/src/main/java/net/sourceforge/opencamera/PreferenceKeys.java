@@ -44,7 +44,13 @@ public class PreferenceKeys {
     public static String getVideoQualityPreferenceKey(int cameraId, boolean high_speed) {
     	return "video_quality_" + cameraId + (high_speed ? "_highspeed" : "");
     }
-    
+
+	public static final String OutputFormat = "preference_output_format";
+
+	public static final String OutputVideoCodec = "preference_output_video_codec";
+
+	public static final String OutputAudioCodec = "preference_output_audio_codec";
+
 	public static final String IsVideoPreferenceKey = "is_video";
 
 	public static final String ExposurePreferenceKey = "preference_exposure";

@@ -677,4 +677,21 @@
         <item>flash_frontscreen_on</item>
         <item>flash_frontscreen_torch</item>
     </string-array>
+    <string-array name="output_format">
+        <!-- TODO -->
+    </string-array>
+    <string-array name="video_codec_entries">
+        <item>@string/video_codec_avc</item>
+        <item>@string/video_codec_hevc</item>
+    </string-array>
+    <string-array name="video_codec_values">
+        <item>2</item> <!-- MediaRecorder.VideoEncoder.H264 -->
+        <item>5</item> <!-- MediaRecorder.VideoEncoder.HEVC -->
+    </string-array>
+    <string name="audio_codec_entries">
+        <!-- TODO -->
+    </string>
+    <string name="audio_codec_values">
+        <!-- TODO -->
+    </string>
 </resources>

@@ -57,6 +57,9 @@ public interface ApplicationInterface {
 	int getImageQualityPref(); // jpeg quality for taking photos; "90" is a recommended default
 	boolean getFaceDetectionPref(); // whether to use face detection mode
 	String getVideoQualityPref(); // should be one of Preview.getSupportedVideoQuality() (use Preview.getCamcorderProfile() or Preview.getCamcorderProfileDescription() for details); or return "" to let Preview choose quality
+	int getOutputFormat(int defValue);
+	int getOutputVideoCodec(int defValue);
+	int getOutputAudioCodec(int defValue);
 	boolean getVideoStabilizationPref(); // whether to use video stabilization for video
 	boolean getForce4KPref(); // whether to force 4K mode - experimental, only really available for some devices that allow 4K recording but don't return it as an available resolution - not recommended for most uses
 	String getVideoBitratePref(); // return "default" to let Preview choose
